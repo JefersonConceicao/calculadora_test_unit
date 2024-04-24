@@ -1,0 +1,9 @@
+version: '3.9'
+
+services: 
+  php:  
+    container_name: 'php'
+    build: '.'
+    volumes: 
+      - './:/usr/src/myapp'
+    command: tail -f /dev/null
